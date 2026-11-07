@@ -25,6 +25,60 @@
     .status{font-size:12px;margin-left:auto;color:var(--muted)}.section{margin-top:14px}.foot{color:var(--muted);font-size:12px;line-height:1.55;margin:14px 3px}
     .pill{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:4px 8px;color:var(--muted)}
     @media(min-width:700px){.editor{min-height:390px}.wrap{padding-top:28px}}
+    
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+  .wrap {
+    width: 100%;
+    padding: 12px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .toolbar select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  button {
+    min-height: 42px;
+  }
+
+  .card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .editor {
+    min-height: 280px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .runrow {
+    flex-wrap: wrap;
+  }
+
+  .output {
+    min-height: 100px;
+    overflow-x: auto;
+  }
+}
+    
   </style>
 </head>
 <body>
