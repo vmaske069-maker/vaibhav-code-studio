@@ -88,7 +88,7 @@ document.getElementById('clearBtn').onclick = () => { code.value=''; localStorag
 document.getElementById('copyBtn').onclick = async () => {
   try { await navigator.clipboard.writeText(output.textContent); status.textContent='Output copied'; }
   catch { status.textContent='Copy unavailable'; }
-
+};
 
 runBtn.onclick = async () => {
   const source = code.value.trim();
